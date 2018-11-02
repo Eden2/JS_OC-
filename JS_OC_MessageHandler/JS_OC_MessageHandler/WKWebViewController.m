@@ -12,6 +12,8 @@
 #import "WKWebViewController.h"
 #import "HLAudioPlayer.h"
 
+#define QQ 66.f
+
 @interface WKWebViewController ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (strong, nonatomic)   WKWebView                   *webView;
