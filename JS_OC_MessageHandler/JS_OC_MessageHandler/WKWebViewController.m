@@ -12,6 +12,8 @@
 #import "WKWebViewController.h"
 #import "HLAudioPlayer.h"
 
+#define isIphoneX ([UIScreen mainScreen].bounds.size.height >=821)
+#define isTopMargin (isIphoneX?24.f:0)
 @interface WKWebViewController ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (strong, nonatomic)   WKWebView                   *webView;
