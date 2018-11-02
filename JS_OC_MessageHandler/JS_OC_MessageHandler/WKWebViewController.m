@@ -12,8 +12,6 @@
 #import "WKWebViewController.h"
 #import "HLAudioPlayer.h"
 
-#define isIphoneX ([UIScreen mainScreen].bounds.size.height >=821)
-#define isTopMargin (isIphoneX?24.f:0)
 @interface WKWebViewController ()<WKUIDelegate,WKScriptMessageHandler>
 
 @property (strong, nonatomic)   WKWebView                   *webView;
@@ -97,7 +95,7 @@
 - (void)initProgressView
 {
     CGFloat kScreenWidth = [[UIScreen mainScreen] bounds].size.width;
-    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0,64.f + isTopMargin, kScreenWidth, 2)];
+    UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 2)];
     progressView.tintColor = [UIColor redColor];
     progressView.trackTintColor = [UIColor lightGrayColor];
     [self.view addSubview:progressView];
