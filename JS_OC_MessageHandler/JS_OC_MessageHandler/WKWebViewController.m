@@ -34,7 +34,7 @@
     [self initProgressView];
     
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    NSLog(@"estimatedProgress =%f",self.webView.estimatedProgress);
+    NSLog(@"webview的的estimatedProgress属性：%f",self.webView.estimatedProgress);
 }
 
 - (void)viewWillAppear:(BOOL)animated
