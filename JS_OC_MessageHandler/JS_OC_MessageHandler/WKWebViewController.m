@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"MessageHandler";
-    
+    NSLog(@"我错了");
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(rightClick)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
