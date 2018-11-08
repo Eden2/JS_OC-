@@ -1,4 +1,5 @@
 *.[oa]
 .gitignore
 node_modules/
-*.xcuserstate
+xcuserdata/
+xcshareddata/
