@@ -1,3 +1,4 @@
 *.[oa]
 .gitignore
 node_modules/
+*.xcuserstate
